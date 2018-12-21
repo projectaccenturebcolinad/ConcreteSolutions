@@ -18,11 +18,12 @@ public class ProtectApisController {
     ProtectApisController(UserRepository repoUser) {
         this.repoUser = repoUser;
     }
-
-    //Get Profile
-    @PostMapping("/getProfile")
-    ResponseEntity<?> getProfile(@RequestBody TokenProfile token) {
-        logsProtectApisController.info("Api getProfile - Call Success");
-        return ResponseEntity.ok().body(repoUser.findByToken(token.getToken()));
+    
+    //Get Users
+    @GetMapping("/getUsers")
+    ResponseEntity<?> getUsers() {
+        logsProtectApisController.info("Api getUsers - Call Success");
+        return ResponseEntity.ok().body(repoUser.findAll());
     }
+
 }
