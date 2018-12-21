@@ -1,6 +1,5 @@
 package com.evaluateApisBcolinad.restfulApis.Controllers;
 
-import com.evaluateApisBcolinad.restfulApis.CustomClass.TokenProfile;
 import com.evaluateApisBcolinad.restfulApis.Repositories.UserRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -18,7 +17,7 @@ public class ProtectApisController {
     ProtectApisController(UserRepository repoUser) {
         this.repoUser = repoUser;
     }
-    
+
     //Get Users
     @GetMapping("/getUsers")
     ResponseEntity<?> getUsers() {
