@@ -1,4 +1,4 @@
-# Caracteristicas General
+# Caracteristicas Generales
 Gradle 4.10.3
 
 Tomcat 9.0.14
@@ -14,6 +14,8 @@ Sprint Boot 2.0.4
 JWT 0.9.1
 
 Encryptación Bcrypt para Token y Password
+
+JDK 1.8
 
 # Apis Expuestas
 # singUp
