@@ -71,20 +71,6 @@ public class AuthController {
         }
     }
 
-    //Get Profile
-    @PostMapping("/getProfile")
-    ResponseEntity<?> getProfile(
-            @RequestBody TokenProfile token
-    ) {
-        return ResponseEntity.ok().body(repoUser.findByToken(token.getToken()));
-    }
-
-    //Get Users
-    @PostMapping("/getUsers")
-    ResponseEntity<?> getUsers() {
-        return ResponseEntity.ok().body(repoUser.findAll());
-    }
-
     //Create User
     @PostMapping("/signUp")
     ResponseEntity<?> signUp(
