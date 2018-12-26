@@ -49,7 +49,7 @@ Descripción: Lista de Usuarios Registrados - acceso restringido por token.
 
 Metodo:GET
 
-URI:/aut/protectApis
+URI:/protectApis/getUsers
 
 Cuerpo: Es neceseario enviar por Beer el token generado en la API singIn
 
