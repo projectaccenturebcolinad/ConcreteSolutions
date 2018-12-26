@@ -54,4 +54,5 @@ URI:/protectApis/getUsers
 Cuerpo: Es neceseario enviar por Beer el token generado en la API singIn
 
 respuesta:[{"id":,"name": "","email": "","password": "","phones": "","created": "","modified": "","last_login": "","token": "","roles": []}]
+
 Restricciones: seguir el formato del cuerpo indicado.
